@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-1">
+        <a href="contact.html" target="_self" class="p-3">
+            <img src="icon/logo.png" alt="Mekelle Restaurant" width="100px">
+        </a>
+        <h1 class="text-warning f-3 mx-auto">Contact us</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse justify-content-center" id="main-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html" target="_self">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html" target="_self">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html" target="_self">Reservation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <form class="formbox">
+            <div class="form-group">
+                <label for="namebox" class="form-label text-light">Name</label>
+                <input type="text" class="form-control" placeholder="Your full name" id="namebox" required>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="emailbox" class="form-label text-light">Email</label>
+                <input type="email" class="form-control" placeholder="E-mail" id="emailbox" required>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="phonebox" class="form-label text-light">Phone</label>
+                <input type="tel" class="form-control" placeholder="+251-XXX-XXXX" id="phonebox">
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="textbox" class="form-label text-light">Message</label>
+                <textarea class="form-control" rows="6" placeholder="Write here if you have additional requests" id="comment"></textarea>
+            </div>
+            <br><br><br>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br><br><br>
+    <div class="container-fluid bg-warning footer text-dark">
+        <section class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h5><b>About us</b></h5>
+                    <p>We have a strong commitment to quality and a dedication to customer satisfaction. Our restaurant will continue to thrive and delight diners with its comforting and flavorful dishes.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h5><b>Address</b></h5>
+                    <address>Tigray, Mekelle<br>
+                        <span>Phone:</span> +251-914722740<br>
+                        <span>Email:</span> semereherruy27@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.facebook.com" target="_blank"><img src="icon/fb.png" alt="facebook account" class="img-fluid"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="icon/insta.png" alt="instagram account" class="img-fluid"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>   

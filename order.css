@@ -1,0 +1,119 @@
+body {
+    background-image: url('order.jpg');
+}
+li a:hover {
+    background-color: brown;
+    border-radius: 15px;
+}
+.foodmenu,.drinkmenu {
+    color: white;
+}
+
+.country,.city,.zip {
+    display: inline-block;
+    font-size: 15px;
+    width: 100%;
+}
+
+.country input,.city input,.zip input {
+    margin-top: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.namebox,.emailbox,.addressbox {
+    width: 100%;
+}
+
+.name-input,.email-input,.food-menu,.drink-menu {
+    width: 100%;
+}
+
+label.form-label.text-light {
+    font-size: 20px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+#submitbtn {
+    font-size: 20px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    width: 150px;
+    height: 50px;
+    margin: 0 auto; 
+    display: block; 
+    border-radius: 20px;
+}
+
+@media (min-width: 992px) {
+    .label.m-3 {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .namebox, .emailbox, .addressbox {
+        width: 100%;
+    }
+
+    .name-input, .email-input, .food-menu, .drink-menu {
+        width: 100%;
+    }
+
+    .country, .city, .zip {
+        display: block;
+        width: 100%;
+    }
+
+    .country input, .city input, .zip input {
+        margin-top: 10px;
+        border-radius: 5px;
+        max-width: 100%;
+    }
+
+    .label.m-3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
