@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Order</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-1">
+        <a href="contact.html" target="_self" class="navbar-brand p-3">
+            <img src="icon/logo.png" alt="Mekelle Resturant" width="100px">
+        </a>
+        <h1 class="text-warning f-1">Online Order</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse justify-content-center" id="main-navbar">
+            <ul class="navbar-nav flex-lg-row text-center f-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html" target="_self">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html" target="_self">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_self">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <section class="container-fluid">
+        <form>
+            <div class="namebox">
+                <label for="name" class="form-label text-light">Full name</label> <br>
+                <input type="text" class="form-control" placeholder="Full Name" id="name" maxlength="30" required>
+            </div>
+            <br>
+            <div class="emailbox">
+                <label for="email" class="form-label text-light">Email</label> <br>
+                <input type="email" class="form-control" placeholder="Email" id="email" required>
+            </div>
+            <br>
+            <div class="addressbox">
+                <div class="country">
+                    <label for="country" class="form-label text-light">Country</label> <br>
+                    <input type="text" class="form-control" placeholder="Country Name" id="country" required> <br>
+                </div>
+                <div class="city">
+                    <label for="city" class="form-label text-light">City</label> <br>
+                    <input type="text" class="form-control" placeholder="City Name" id="city" required> <br>
+                </div>
+                <div class="zip">
+                    <label for="zip" class="form-label text-light">Zip</label> <br>
+                    <input type="number" class="form-control" placeholder="Zip Code" id="zip" required> <br>
+                </div>
+            </div>
+            <div class="label m-3">
+                <label class="form-label"><h1 class="text-light m-3">Food menu</h1></label> <br>
+            </div>
+            <div class="form-check foodmenu m-3">
+                <input class="form-check-input" type="checkbox" id="" name="food1">
+                <label class="form-check-label" for="food1">Sandwich</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food2">
+                <label class="form-check-label" for="food2">Burger</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food3">
+                <label class="form-check-label" for="food3">Pizza</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food4">
+                <label class="form-check-label" for="food4">Pasta</label><br>                    
+                <input class="form-check-input" type="checkbox" id="" name="food5">
+                <label class="form-check-label" for="food5">Mocoroni</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food6">
+                <label class="form-check-label" for="food6">Salad</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food7">
+                <label class="form-check-label" for="food7">Rice</label><br>                    
+                <input class="form-check-input" type="checkbox" id="" name="food8">
+                <label class="form-check-label" for="food8">Tibs</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="food8">
+                <label class="form-check-label" for="food8">None</label><br>
+            </div>
+            <div class="label m-3">
+                <label class="form-label"><h1 class="text-light m-3">Drink menu</h1></label> <br>
+            </div>
+            <div class="form-check drinkmenu m-3">
+                <input class="form-check-input" type="checkbox" id="" name="drink1">
+                <label class="form-check-label" for="drink1">Coffee</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink2">
+                <label class="form-check-label" for="drink2">Beer</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink3">
+                <label class="form-check-label" for="drink3">Coca cola</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink4">
+                <label class="form-check-label" for="drink4">Water</label><br>                    
+                <input class="form-check-input" type="checkbox" id="" name="drink5">
+                <label class="form-check-label" for="drink5">Ngus</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink6">
+                <label class="form-check-label" for="drink6">Sprite</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink7">
+                <label class="form-check-label" for="drink7">Water</label><br>                    
+                <input class="form-check-input" type="checkbox" id="" name="drink8">
+                <label class="form-check-label" for="drink8">Wine</label><br>
+                <input class="form-check-input" type="checkbox" id="" name="drink8">
+                <label class="form-check-label" for="drink8">None</label><br>
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" class="bg-warning text-dark" id="submitbtn" value="Order">
+            </div>
+        </form>
+    </section>
+    <br><br><br>
+    <div class="container-fluid bg-warning footer">
+        <section class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h5><b>About us</b></h5>
+                    <p>We have a strong commitment to quality and a dedication to customer satisfaction. Our restaurant will continue to thrive and delight diners with its comforting and flavorful dishes.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h5><b>Address</b></h5>
+                    <address>Tigray, Mekelle<br>
+                        <span>Phone:</span> +251-914722740<br>
+                        <span>Email:</span> semereherruy27@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.facebook.com" target="_blank"><img src="icon/fb.png" alt="facebook account" class="img-fluid"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="icon/insta.png" alt="instagram account" class="img-fluid"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
